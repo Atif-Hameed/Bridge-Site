@@ -5,6 +5,7 @@ import Features from './Features'
 import Pricing from './Pricing'
 import FingerTips from './FingerTips'
 import ContactUs from './ContactUs'
+import Footer from './Footer'
 
 function LandingPage() {
   return (
@@ -16,6 +17,7 @@ function LandingPage() {
         <Pricing/>
         <FingerTips/>
         <ContactUs/>
+        <Footer/>
       </div>
     </>
   )
