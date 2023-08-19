@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Pricing() {
     return (
         <>
-            <div className='flex justify-center mt-[7rem]'>
+            <div id='pricing' className='flex justify-center mt-[7rem]'>
                 <div className='md:w-[28rem] w-full flex flex-col gap-4'>
                     <h1 className='md:text-[4rem] text-[2rem] text-center'>Pricing</h1>
                     <p className='md:text-[1.5rem] text-[1rem] text-center'>Most calendars are designed for teams.

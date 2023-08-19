@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as ScrollLink } from 'react-scroll';
 import bridgeLogo from '../../assets/bridge-logo.png'
 import { Link } from 'react-router-dom'
 
@@ -10,10 +11,13 @@ function Navbar() {
                     <img src={bridgeLogo} className='md:pl-0 pl-2' alt="" />
                     <div className='grow flex justify-between'>
                         <div className='flex md:gap-6 gap-4'>
-                            <Link to='/Plans'>
-                                <p1 className="hover:text-red-600">Plan</p1>
-                            </Link>
-                            <p1 className="hover:text-red-600 cursor-pointer">Guide</p1>
+                            <ScrollLink to="pricing" spy={true} smooth={true} offset={-50} duration={500}>
+                                <p1 className="cursor-pointer hover:text-red-600">Plan</p1>
+                            </ScrollLink>
+
+                            <ScrollLink to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                                <p1 className="hover:text-red-600 cursor-pointer">Guide</p1>
+                            </ScrollLink>
                         </div>
                         <div className='flex md:gap-6 gap-4 md:pr-5 pr-4'>
                             <Link to="/SignUp">

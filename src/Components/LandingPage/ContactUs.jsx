@@ -6,7 +6,7 @@ import loc from '../../assets/loc.png'
 function ContactUs() {
     return (
         <>
-            <div className='mt-[10rem]'>
+            <div id='contact' className='mt-[10rem]'>
 
                 <div className='flex flex-col justify-center items-center md:gap-3 gap-1'>
                     <h1 className='md:text-[3rem] text-[2rem]'>Contact Us</h1>
